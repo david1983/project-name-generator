@@ -14,7 +14,7 @@ app.get('/api/generate',(req, res)=>{
    res.json({name: generateName()})
 })
 
-const port = 8882
+const port =  process.env.PORT || 8882;
 app.listen(port,()=>{
    console.log("Listening on port: " + port)
 })
