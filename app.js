@@ -4,7 +4,7 @@ const cors = require("cors");
 const wordnet = require("./wordnet/wordnet")
 
 app.use(cors())
-// app.use(express.static('public'))
+app.use(express.static('public'))
 
 
 function pickRnd(arr){

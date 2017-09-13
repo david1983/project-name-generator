@@ -3,7 +3,7 @@ import axios from "axios"
 import {observer} from "mobx-react"
 import './App.css';
 
-const apiUrl = 'http://127.0.0.1:8883/api/generate'
+const apiUrl = '/api/generate'
 @observer class App extends Component {
 
   generate(){
