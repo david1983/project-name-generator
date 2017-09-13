@@ -3,7 +3,7 @@ const app = express()
 const cors = require("cors");
 const wordnet = require("./wordnet/wordnet")
 
-app.use(cors())
+// app.use(cors())
 app.use(express.static('public'))
 
 
