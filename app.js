@@ -2,7 +2,10 @@ const express = require("express")
 const app = express()
 const cors = require("cors");
 const wordnet = require("./wordnet/wordnet")
-
+var http = require("http");
+setInterval(function() {
+    http.get("http://project-name-generator.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 // app.use(cors())
 app.use(express.static('public'))
 
