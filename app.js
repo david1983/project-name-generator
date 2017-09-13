@@ -15,7 +15,7 @@ function pickRnd(arr){
 }
 
 function generateName(){
-   return pickRnd(wordnet.adverbs) + "-" + pickRnd(wordnet.verbs) + "-" + pickRnd(wordnet.adjectives) + "-" + pickRnd(wordnet.nouns)
+   return pickRnd(wordnet.adverbs) + "-" + pickRnd(wordnet.adjectives) + "-" + pickRnd(wordnet.nouns)
 }
 
 app.get('/api/',(req, res)=>{
