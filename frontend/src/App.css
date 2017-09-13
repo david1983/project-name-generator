@@ -1,3 +1,45 @@
 .App {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   text-align: center;
+  background: #c0392b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+.gen-name{
+  font-size: 3em;
+  font-weight: bold;
+  color:#eee;
+  padding:2em;
+}
+
+.button{
+  background:#8e44ad;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2em;
+  padding:1em 2em;  
+  border: 1px solid #592B6C;
+  border-radius: 20em;
+  box-shadow: 0px 7px 20px -5px #333;
+  transition:0.3s all;
+}
+
+
+.button:hover{
+  background:#AB55CF;
+  transform: translateY(-4px);
+}
+
+
+.button:active, .button:target{
+  background:#8e44ad;
+  transform: translateY(0);
 }
